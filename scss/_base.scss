@@ -25,12 +25,28 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: start;
-    
 }
 
-.nav1 a :hover {
-    background-color: azure;
+.nav1 ul
+ol {
+    list-style: none;
 }
+
+header ul {
+    display: flex;
+    gap: 1rem;
+}
+nav a {
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav1 ul li a:hover {
+    background-color: rgba(244, 183, 193, 0.338);
+}
+
 
 body {
     
@@ -45,6 +61,9 @@ body {
     margin: auto;
     background-attachment: fixed;
 }
+
+
+
 
 /*PARRAFO*/
 p {

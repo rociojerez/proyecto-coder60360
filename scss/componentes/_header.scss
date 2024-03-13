@@ -8,12 +8,12 @@
        gap: 1rem;
        text-decoration: none;
    }
-   .nav1 ul li {
+   /*.nav1 ul li {
     display:inline-table;
     text-decoration: none;
     list-style: none;
     
-   }
+   }*/
 
    .nav1 {
        align-items:flex-end;
@@ -60,16 +60,18 @@
        display: inline-block;
        line-height: 80px;
        margin: 0 5px;
-       text-decoration: none;
+       text-decoration:none;
    }
    nav a {
        color: #431200;
    }
+   .nav1 ul li a :hover {
+    background-color: #eeefef;
+   }
 
     .container-img {
        width: 80%;
-       
-       grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
        
    }
    
