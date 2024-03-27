@@ -23,7 +23,7 @@
        font-size: 2rem;
        text-align: left;
        color: #9c9694;
-       background-color: #27201e;
+       
    }
 
    .container-img {
@@ -45,14 +45,10 @@
 /*tablet*/
 @media only screen and (min-width:700px) {
    
-   body {
-       background-color: rgb(96, 214, 96);
-   }
 
    header h1{
        font-size: 2rem;
-       color: #eeefef;
-       background-color: #431200;
+       color: black;
        text-align:start;
    }
    .nav1 ul li {
@@ -62,7 +58,7 @@
        text-decoration:none;
    }
    nav a {
-       color: #431200;
+       color: black;
    }
    .nav1 ul li a :hover {
     background-color: #eeefef;
