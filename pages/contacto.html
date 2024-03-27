@@ -20,44 +20,49 @@
         <nav class="nav1">
             <ul>
 
-                <li><a href="../index.html">home</a></li>
-                <li><a href="./accesorios.html">accesorios</a></li>
-                <li><a href="./mates.html">mates</a></li>
-                <li><a href="./ofertas.html">ofertas</a></li>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./accesorios.html">ACCESORIOS</a></li>
+                <li><a href="./mates.html">MATES</a></li>
+                <li><a href="./ofertas.html">OFERTAS</a></li>
 
             </ul>
 
         </nav>
 
-
-
     </header>
+
     <main>
+        <h5>Te podes contactar con nosotros por cualquier inconveniente
+            te ayudamos y gestionamos tu problema en menos de 24 horas no dudes en
+            comunicarte con nostros!!
+        </h5>
+        <p>Para comprar escribí el nombre del articulo y nosotros te despachamos</p>
         <form action="" method="">
             <div>
-                <label for="nombre">ingrese su nombre y apellido:</label>
+                <label for="nombre">Ingrese su nombre y apellido:</label>
                 <input type="text" name="" id="nombre" placeholder="ejemplo:rocio jerez">
             </div>
 
+            <label form="correo">Ingrese su correo:</label>
+            <input type="text" name="" id="correo">
 
-            <div>
-                <label form="correo">ingrese su correo:</label>
-                <input type="email" name="correo" id="correo">
+            <label form="asunto">Seleccione su asunto</label>
+
+            <select name="asunto" id="asunto">
+                <option value="">comprar</option>
+                <option value="">devolución</option>
+                <option value="">reclamo</option>
+                <option value="">cambiar</option>
+
+            </select>
             </div>
 
             <div>
-                <label form="asunto">seleccione su asunto</label>
-                <select name="asunto" id="asunto">
-                    <option value="">cambiar</option>
-                    <option value="">devolución</option>
-                    <option value="">reclamo</option>
-                </select>
-            </div>
+                <label form="mensaje"> </label>
 
-            <div>
-                <label form="mensaje">ingrese su mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="40" rows="12"></textarea>
-                <input type="submit" value="Enviar">
+                <textarea name="mensaje" id="mensaje" cols="32" rows="12"></textarea>
+
+                <input type="submit" class="botton" value="Enviar">
             </div>
 
         </form>
@@ -65,6 +70,21 @@
 
         </section>
     </main>
+
+    <!-- pie de pagina-->
+    <footer>
+        <div class="piedepagina">
+            <h4>virtual mate</h4>
+            <p class="par">tu mejor compañía</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p class="par">copyright &copy;2024 VM</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>

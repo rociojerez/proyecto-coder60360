@@ -3,32 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*font-family: 'Ubuntu', sans-serif;*/
 
-/*TITULO*/
+/*fuente :font-family: 'Ubuntu', sans-serif;*/
+
+/*colores*/
 $color-primary: #260B01;
-$color-background: #A68C76; 
-$color-body:#F2D0C4;
-/*$color-background: #A68C76;*/
+$color-background: #A68C76;
+$color-body: rgb(118, 246, 118);
+$color-nav: white;
+
+/*titulo*/
 h1 {
     color: $color-primary;
     background-color: $color-background;
+    border-top: 3px solid $color-nav;
     font-family: 'Ubuntu', sans-serif;
-    text-align:start;
+    justify-content: center;
     font-size: 2rem;
+    margin: 5px;
 }
 
 header {
+    background-image: url("../img/mate.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid black;
     font-family: 'Ubuntu', sans-serif;
-    padding: 1rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: start;
 }
 
-.nav1 ul
-ol {
+.nav1 ul ol {
     list-style: none;
 }
 
@@ -36,21 +44,76 @@ header ul {
     display: flex;
     gap: 1rem;
 }
+
 nav a {
-    color: white;
+    color: $color-nav;
     padding: 8px 15px;
     text-decoration: none;
     text-align: center;
 }
 
 .nav1 ul li a:hover {
-    background-color: rgba(244, 183, 193, 0.338);
+    background-color: $color-primary;
+    color: $color-nav;
 }
 
+/*.blanco {
+    width: 60%;
+    padding: 10px;
+    margin-left: 22%;
+}*/
+.portada {
+    background: $color-background;
+    width: 100%;
+    height: 400px;
+    background: url(../img/paisaje.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
 
+}
+/*imagen 2 wrapper*/
+.wrapper {
+    margin: 10px auto;
+    padding-left: 10px;
+    width: 60%; 
+}
+
+.wrapper img {
+    width: 50%;
+    margin-left: 20%;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 3px; 
+   
+}
+
+.texto-box {
+    color: black;
+}
+
+.texto-box h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.texto-box p {
+    font-size: 1rem;
+}
+
+.texto {
+    color: black;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*body*/
 body {
-    
-    background-color: $color-body;
+    background-image: url("../img/background.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .conteiner {
@@ -66,21 +129,43 @@ body {
 
 
 /*PARRAFO*/
+
+.parrafo {
+    font-size: 1rem;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
 p {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+span {
+    background-color: rgb(207, 27, 174);
+    color: $color-nav;
+    font-style:oblique;
+
 }
 
 .titulo-secciones {
-    color: $color-primary;
-    background-color: rgba(250, 235, 215, 0.904);
+    color: $color-nav;
+    border-radius: 10px;
+    background-color: rgba(19, 17, 15, 0.904);
+    margin: 5px;
+    padding: 10px;
     font-family: 'Ubuntu', sans-serif;
-    text-align:center;
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1rem;
 }
+
+/*destacados y oferta*/
 
 .productos {
     border: 3px solid $color-primary;
+    border-radius: 10px;
     min-height: 250px;
     min-width: 180px;
     align-items: center;
@@ -91,21 +176,26 @@ p {
 .productos img {
     width: 100%;
     height: 180px;
+    object-fit: cover;
 }
 
 .productocuadro {
     border: 1px solid $color-primary;
+    border-radius: 5px;
+    background-color: $color-nav;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 1rem;
-    ;
+
 }
 
 .productocuadro a {
+    border-radius: 10px;
+    margin: 10px;
     text-decoration: none;
-    color: $color-primary;
-    background-color: #A68C76;
+    color: $color-nav;
+    background-color: rgb(72, 115, 8);
 }
 
 .img {
@@ -122,42 +212,65 @@ p {
     gap: 1rem;
 }
 
-/*accesorio*/
+/*accesorio TIITULO*/
 .caja-linea {
     display: flex;
-    background-color:#D9AFA0;
+    border-radius: 5px;
+    background-color: rgba(19, 17, 15, 0.904);
+    color: $color-nav;
     justify-content: center;
 
 }
 
-.contenedor {
-    background-color: #D9AFA0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-/*mas vendidos*/
-.container-img{
-    width: 100%;
-    max-width: 1100px;
+/*Accesorios y Mates Grid*/
+.container-img {
+    max-width: 40%;
+    padding-top: 20px;
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 60;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 250px;
-    grid-gap: 20px;
+    grid-template-rows: 200px;
+    grid-gap: 15px;
+}
+
+.box-img {
+    border-radius: 6px;
+    border: solid 2px black;
+    overflow: hidden;
+    background-color: $color-nav;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.box-img:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%)
+}
+
+.box-img a {
+    background-color: rgb(72, 115, 8);
+    color: $color-nav;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 35%;
 }
 
 .container-img .box-img figure {
     width: 100%;
     height: 100%;
 }
+
 .container-img .box-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: $color-nav;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
 }
 
 .container-img .box-img:nth-child(1) {
@@ -168,17 +281,150 @@ p {
     grid-column-start: span 1;
 }
 
-.caja {
-    
-    background-color: #A68C76;
-    width: 200px;
-    min-height: 200px;
-    padding: 70px;
-    border: 5px solid black;
-    justify-content: center;
+.comprar {
+    text-align: center;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.comprar li a {
+    background-color: blue;
+    color: $color-nav;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.comprar li a:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
 }
 
 .googlemaps {
-    width: 100%;
+    width: 40%;
+    height: 90%;
+    border-radius: 50px;
+}
 
-} 
+
+
+/*contacto*/
+h5 {
+    font-size: 1rem;
+    color: $color-nav;
+    background-color: black;
+    margin-top: auto;
+    border-radius: 10px;
+    border: 2px solid $color-nav;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+form {
+    background-color: $color-nav;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: auto;
+    width: 300px;
+    font-size: 1rem;
+}
+
+input {
+    width: 250px;
+    height: 20px;
+    align-items: center;
+    background-color: #f2d0c483;
+}
+
+input,
+textarea {
+    background-color: #f2d0c483;
+    border-radius: 10px;
+
+}
+
+.botton {
+    background-color: black;
+    color: $color-nav;
+    border-radius: 10px;
+}
+
+/*pie de pagina*/
+
+footer {
+    background: black;
+    height: auto;
+    width: 100vw;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 40px;
+    color: white;
+}
+
+.piedepagina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.piedepagina h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.piedepagina .par {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+    
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i {
+    color: palevioletred;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom .par {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}

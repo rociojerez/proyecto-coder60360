@@ -1,19 +1,18 @@
 /*mobile*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
     
     header ul {
        display: flex;
        flex-direction:column-reverse;
        gap: 1rem;
-       text-decoration: none;
+       
    }
-   /*.nav1 ul li {
-    display:inline-table;
+   .nav1 ul li {
     text-decoration: none;
     list-style: none;
     
-   }*/
+   }
 
    .nav1 {
        align-items:flex-end;
@@ -47,7 +46,7 @@
 @media only screen and (min-width:700px) {
    
    body {
-       background-color:pink;
+       background-color: rgb(96, 214, 96);
    }
 
    header h1{

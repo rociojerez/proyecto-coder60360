@@ -3,13 +3,14 @@
 
 <head>
     <link rel="stylesheet" href="./css/style.css">
-    <meta charset="UTF-8"><!-- EL TIPO DE SIMBOLO QUE PODES USAR-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--COMPATIBILIDAD CON LOS NAVEGADORES-->
-    <title>virtualbazar</title><!-- ES LA QUE LE DA EL NOMBRE A LA WEB-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>virtualmate</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--tipografia externa-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--tipografia externa-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 
 
@@ -23,12 +24,12 @@
         <h1>VIRTUAL MATE DEL ALMA</h1>
 
         <!--NAVEGACION ENLACES INTERNOS-->
-        <nav class="nav1"> 
+        <nav class="nav1">
             <ul>
-                <li><a href="./pages/accesorios.html">accesorios</a></li>
-                <li><a href="./pages/mates.html">mates</li>
-                <li><a href="./pages/ofertas.html">ofertas</a></li>
-                <li><a href="./pages/contacto.html">contacto</a></li>
+                <li><a href="./pages/accesorios.html">ACCESORIOS</a></li>
+                <li><a href="./pages/mates.html">MATES</a></li>
+                <li><a href="./pages/ofertas.html">OFERTAS</a></li>
+                <li><a href="./pages/contacto.html">CONTACTO</a></li>
 
             </ul>
 
@@ -39,32 +40,25 @@
 
     <main>
 
-       <!-- <div class="container">
-            <img src="./img/deco-pag.jpg" alt="portada">
-        </div> PORTADA DE LA PAGINA-->
-
-
-
         <section>
 
             <h2 class="titulo-secciones">Te cuento</h2>
-            <p> Todo empezo en plana pandemia, cuando no podias  salir, caminar 
+            <p class="parrafo"> Todo empezó en plena pandemia cuando no podías salir, caminar
                 y chusmear.
-                virtual Mate es un emprendimiento joven con un gran sueño de poder llevarte
-                lo que te guste a tu casa, sean pequeñas cosas como grandes.
-                todo es posible, así que no dudes en chusmear por esté lugar.
+                <span>Virtual Mate</span> es un emprendimiento joven con un gran sueño de poder llevarte
+                lo que te guste a tu casa, sean pequeñas cosas como grandes
+                todo es posible, así que no dudes en chusmear por este lugar.
 
             </p>
+
+            <div class="portada"></div>
+
+
         </section>
 
         <section>
 
-            <h2 class="titulo-secciones">Destacados</h2>
-            <form action="">
-                <input type="search" placeholder="buscar">
-                <input type="submit" value="buscar">
-
-            </form>
+            <h2 class="titulo-secciones">ofertas</h2>
 
             <div class="slider-productos">
                 <article class="productos">
@@ -123,99 +117,56 @@
 
                     <img src="./img/mickeymate.webp" class="img" alt="mickey mate">
                     <div class="productocuadro">
+
                         <h3>raqueta electrica</h3>
                         <p>$10.000</p>
-                        <a href="">comprarr</a>
+                        <a href="">comprar</a>
                     </div>
                 </article>
             </div>
 
-            <div class="slider-productos">
-                <article class="productos">
-                    <img src="./img/duomate.jpg" class="img" alt="duomate">
+        </section>
 
-                    <div class="productocuadro">
-                        <h3>Duo Mat</h3>
-                        <p>$3500</p>
-                        <a href="">comprar</a>
-                    </div>
-
-                </article>
-
-                <article class="productos">
-
-                    <img src="./img/matporteño.webp" class="img" alt="mate porteño">
-                    <div class="productocuadro">
-                        <h3>Mate Porteño</h3>
-                        <p>$10.000</p>
-                        <a href="">comprar</a>
-                    </div>
-
-                </article>
-
-                <article class="productos">
-
-                    <img src="./img/termico.webp" class="img" alt="mate termico">
-                    <div class="productocuadro">
-                        <h3>Mate Termico</h3>
-                        <p>$5.000</p>
-                        <a href="">comprar</a>
-                    </div>
-                </article>
-
-                <article class="productos">
-
-                    <img src="./img/blanco.webp" class="img" alt="pocket mat">
-                    <div class="productocuadro">
-                        <h3>Pocket Mat</h3>
-                        <p>$3.000</p>
-                        <a href="">comprar</a>
-                    </div>
-                </article>
-
-                <article class="productos">
-
-                    <img src="./img/mate.jpg" class="img" alt="mate pampa">
-                    <div class="productocuadro">
-                        <h3>mate pampa</h3>
-                        <p>$8.500</p>
-                        <a href="">comprar</a>
-                    </div>
-                </article>
-
-                <article class="productos">
-
-                    <img src="./img/mickeymate.webp" class="img" alt="mickey mate">
-                    <div class="productocuadro">
-                        <h3>raqueta electrica</h3>
-                        <p>$10.000</p>
-                        <a href="">comprarr</a>
-                    </div>
-                </article>
+        <div class="wrapper">
+            <img src="/img/portada2.jpeg" alt="portada2">
+            <div class="texto-box">
+                <h2> virtual mate </h2>
+                <p> Encontra un mate a tu estilo, <span>calidad garantizada</span>
+                    sabemos que es la mejor compañia para un Argentino y como olvidar a nuestros
+                    vecinos Uruguyos y Paraguayos; a donde vayas te acompaña un buen mate.
+                </p>
             </div>
 
+            <img src="/img/matepampita.png" alt="portada2">
+            <div class="texto-box">
+                <h2> tu compañía </h2>
+                <p> Un mate y <span>despues existo</span> el ritual del mate es sagrado
+                    te mereces tener un buen mate para que tu yerba no se lave por eso te recomiendo
+                    elegir un mate pampa!!
 
-        </section>
+                </p>
+            </div>
 
-        <section>
+        </div>
 
-            <h2 class="titulo-secciones">Estamos acá.</h2>
-            
-            <iframe class="googlemaps"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6542958248183!2d-58.41802652526479!3d-34.5876129566461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca802423284b%3A0xf3ffae4089468234!2sG%C3%BCemes%203774%2C%20C1425%20CABA!5e0!3m2!1ses!2sar!4v1705523362394!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            
-        </section>
+
 
 
     </main>
 
+    <!-- pie de pagina-->
     <footer>
-
-        
-
+        <div class="piedepagina">
+            <h4>virtual mate</h4>
+            <p class="par">tu mejor compañía</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p class="par">copyright &copy;2024 VM</p>
+        </div>
     </footer>
 
 </body>
