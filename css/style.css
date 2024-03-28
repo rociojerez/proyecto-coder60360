@@ -9,8 +9,6 @@
 /*titulo*/
 h1 {
   color: #260B01;
-  background-color: #A68C76;
-  border-top: 3px solid white;
   font-family: "Ubuntu", sans-serif;
   justify-content: center;
   font-size: 2rem;
@@ -129,6 +127,8 @@ p {
   font-size: 1rem;
   border-radius: 5px;
   text-align: center;
+  margin: 4px auto;
+  padding: 6px;
 }
 
 span {
@@ -364,32 +364,6 @@ footer {
   font-size: 14px;
 }
 
-.socials {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 3rem 0;
-}
-
-.socials li {
-  margin: 0 10px;
-}
-
-.socials a {
-  text-decoration: none;
-  color: white;
-}
-
-.socials a i {
-  font-size: 1.1rem;
-  transition: color 0.4s ease;
-}
-
-.socials a:hover i {
-  color: palevioletred;
-}
-
 .footer-bottom {
   background: #000;
   width: 100vw;
@@ -410,7 +384,7 @@ footer {
 }
 
 /*mobile*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
   header ul {
     display: flex;
     flex-direction: column-reverse;
@@ -420,6 +394,9 @@ footer {
     text-decoration: none;
     list-style: none;
   }
+  nav a {
+    color: black;
+  }
   .nav1 {
     align-items: flex-end;
     text-decoration: none;
@@ -427,8 +404,7 @@ footer {
   header h1 {
     font-size: 2rem;
     text-align: left;
-    color: #9c9694;
-    background-color: #27201e;
+    color: black;
   }
   .container-img {
     width: 80%;
@@ -446,13 +422,9 @@ footer {
 }
 /*tablet*/
 @media only screen and (min-width: 700px) {
-  body {
-    background-color: rgb(96, 214, 96);
-  }
   header h1 {
     font-size: 2rem;
-    color: #eeefef;
-    background-color: #431200;
+    color: black;
     text-align: start;
   }
   .nav1 ul li {
@@ -462,7 +434,7 @@ footer {
     text-decoration: none;
   }
   nav a {
-    color: #431200;
+    color: black;
   }
   .nav1 ul li a :hover {
     background-color: #eeefef;
